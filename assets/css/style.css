@@ -115,3 +115,24 @@
     width:100% !important;
     min-height:366px;
 }
+
+.center {text-align: center}
+
+/********************** HOME PAGE ****************************/
+.row {
+    margin: 25px 0;
+}
+#features i {
+    font-size: 10em;
+    color: #232323;
+    text-align: center;
+}
+#features i:hover {
+    color: #254BC4;
+}
+
+
+
+
+
+
