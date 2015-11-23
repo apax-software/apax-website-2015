@@ -499,7 +499,7 @@ input[type="submit"] {
 	width: 100%
 }
 
-.fellowship-content, #fellowship-list {
+.pic-right-content, #web-list {
 	font-weight: 200;
 	font-size: 20px;
 	line-height: 33px;
@@ -508,21 +508,21 @@ input[type="submit"] {
 	text-decoration: underline;
 }
 
-#fellowship-list {
+.pic-right-list {
 	margin: auto;
 	margin-top: -10px;
 	width: 35em;
 }
 
-#fellowship-list ul {
+.pic-right-list ul {
 	margin-left: 1em;
 }
 
-#fellowship-list li {
+.pic-right-list li {
 	float: left;
 }
 
-b.fellowship-content {
+.pic-rightb-content {
 	float: left;
 	width: 100%;
 	font-size: 1.2em;
@@ -1097,12 +1097,12 @@ div.shadow:hover {
 
 
 
-#fellowship h2, #across h2, #cherub h2, #startup h2, #hof h2, #idea h2 {
+.pic-right h2, .segment h2, #startup h2, #hof h2, #idea h2 {
 	color: #2e2e2e;
 	font-weight: 700;
 }
 
-#fellowship p, #across p, #cherub p, #startup p, #hof p {
+.pic-right p, .segment p, #startup p, #hof p {
 	font-weight: 500;
 	text-align: justify;
 }
@@ -1114,30 +1114,30 @@ div.shadow:hover {
 	float: none;
 }
 
-#fellowship a, #across a, #cherub a, #startup a, #hof a, #idea a {
+.pic-right a, .segment a,  #startup a, #hof a, #idea a {
 	font-weight: 500;
 	font-family: "open sans";
 	border-radius: 4px;
 
 }
 
-#fellowship, #hof {
+.pic-right, #hof {
 	background-color: #e2e2e2;
 }
 
 @media (max-width: 1800px) {
-	#fellowship h2, #across h2, #cherub h2, #startup h2, #hof h2 {
+	.pic-right h2, .segment h2  {
 		font-size: 32px;
 	}
 	#hof h2 { font-size: 40px;}
 
-	#fellowship p, #across p, #cherub p, #startup p, #hof p {
+	.pic-right p, .segment p {
 		font-weight: 500;
 		word-spacing: 4px;
 		font-size: 20px;
 	}
 
-	#across p {
+	.segment p {
 		font-size: 22px;
 		line-height: 40px;
 	}
@@ -1146,73 +1146,73 @@ div.shadow:hover {
 		padding-top: 25px;
 	}
 
-	#fellowship a, #across a, #cherub a, #startup a, #hof a {
+	.pic-right a, .segment a  {
 		font-size: 32px;
 		font-weight: 400;
 		font-family: "open sans";
 		border-radius: 4px;
 		margin-bottom: 20px;
 	}
-	#fellowship {
+	.pic-right {
 		word-spacing: 8px;
 	}
 
-	#fellowship h3 {
+	.pic-right h3 {
 		text-align: center;
 	}
 
-	#fellowship img {
+	.pic-right img {
 		width: 125%;
 		height: 125%;
 	}
 }
 
 @media (max-width: 1000px) {
-	#fellowship h2, #across h2, #cherub h2, #startup h2, #hof h2 {
+	.pic-right h2, .segment h2 {
 		color: #2e2e2e;
 		font-weight: 700;
 		font-size: 25px;
 	}
 
-	#fellowship p, #across p, #cherub p, #startup p, #hof p {
+	.pic-right p, .segment p{
 		font-weight: 500;
 		font-size: 18px;
 		word-spacing: 4px;
 		line-height: 19px;
 	}
 
-	#fellowship a, #across a, #cherub a, #startup a, #hof a {
+	.pic-right a, .segment a{
 		font-size: 18px;
 		font-weight: 400;
 		margin-bottom: 20px;
 	}
 
-	#fellowship h3 {text-align: center}
+	.pic-right h3 {text-align: center}
 }
 @media (max-width: 700px) {
-	#fellowship h2, #across h2, #cherub h2, #startup h2, #hof h2 {
+	.pic-right h2, .segment h2 {
 		font-weight: 700;
 		font-size: 20px;
 	}
 
-	#fellowship p, #across p, #cherub p, #startup p, #hof p {
+	.pic-right p, .segment p{
 		font-weight: 500;
 		font-size: 15px;
 		word-spacing: 4px;
 		line-height: 16px;
 	}
 
-	#fellowship a, #across a, #cherub a, #startup a, #hof a {
+	.pic-right a, .segment a{
 		font-size: 18px;
 		font-weight: 400;
 		margin-bottom: 20px;
 	}
 
-	#fellowship h3 {text-align: center}
+	.pic-right h3 {text-align: center}
 }
 
 @media (max-width: 400px) {
-	#fellowship h2, #across h2, #cherub h2, #startup h2, #hof h2 {
+	.pic-right h2, .segment h2 {
 		font-weight: 700;
 		font-size: 15px;
 	}
@@ -1221,179 +1221,179 @@ div.shadow:hover {
 		padding-top: 20%;
 	}
 
-	#fellowship p, #across p, #cherub p, #startup p, #hof p {
+	.pic-right p, .segment p {
 		font-weight: 500;
 		font-size: 10px;
 		word-spacing: 4px;
 		line-height: 11px;
 	}
 
-	#fellowship a, #across a, #cherub a, #startup a, #hof a {
+	.pic-right a, .segment a {
 		font-size: 13px;
 		font-weight: 400;
 		margin-bottom: 20px;
 	}
 
-	#fellowship h3 {text-align: center}
+	.pic-right h3 {text-align: center}
 }
 
 
-#across img {
+.segment img {
 	margin: 35px 0 15px 0;
 	width: 100%;
 	height: 100%;
 }
 
-#across a {
+.segment a {
 	border-color: inherit;
 }
 
 @media (max-width: 1800px) {
 
-	#across img {
+	.segment img {
 		margin: 35px 0 15px 0;
 		width: 100%;
 		height: 100%;
 	}
 
-	#across a {
+	.segment a {
 		font-size: 24px;
 	}
 }
 
 @media (max-width: 1000px) {
 
-	#across img {
+	.segment img {
 		margin: 35px 0 15px 0;
 		width: 100%;
 		height: 100%;
 	}
 
-	#across a {
+	.segment a {
 		font-size: 14px;
 	}
 }
 
 @media (max-width: 700px) {
-	#across h2 {
+	.segment h2 {
 		font-size: 25px;
 	}
 
-	#across p {
+	.segment p {
 		font-size: 15px;
 		line-height: 20px;
 	}
 
-	#across img {
+	.segment img {
 		margin: 35px 0 15px 0;
 		width: 100%;
 		height: 100%;
 	}
 
-	#across a {
+	.segment a {
 		font-size: 16px;
 	}
 }
 
 @media (max-width: 400px) {
-	#across h2 {
+	.segment h2 {
 		font-size: 17px;
 	}
 
-	#across p {
+	.segment p {
 		font-size: 12px;
 		line-height: 20px;
 	}
 
-	#across img {
+	.segment img {
 		margin: 35px 0 15px 0;
 		width: 100%;
 		height: 100%;
 	}
 
-	#across a {
+	.segment a {
 		font-size: 9px;
 	}
 }
 
-.across-pitch {
+.segment-pitch {
 	background-color: rgb(135, 170, 59);
 }
 
-.across-register {
+.segment-register {
 	background-color: rgb(28, 115, 186);
 }
 
-#cherub {
-	background-color: rgb(255, 222, 223);
+#mobile {
+	background-color: white;
 }
 
-#cherub img, #hof img {
+#mobile img, #hof img {
 	width: 80%;
 	height: 175px;
 	padding-left: 10%;
 }
 
-#cherub a,  {
+#mobile a,  {
 	padding: 6px 30%;
 	margin-bottom: 25px;
 }
 
-#cherub h3 {
+#mobile h3 {
 	text-align: center;
 }
 
 @media (max-width: 1800px) {
-	#cherub p {
+	#mobile p {
 		font-size: 20px;
 		line-height: 36px;
 		word-spacing: 7px;
 	}
-	#cherub a {
+	#mobile a {
 		font-size: 30px;
 	}
 }
 
 @media (max-width: 1000px) {
-	#cherub p {
+	#mobile p {
 		line-height: 22px;
 		word-spacing: 3px;
 	}
-	#cherub a {
+	#mobile a {
 		font-size: 22px;
 	}
-	#cherub img {
+	#mobile img {
 		height: 125px;
 	}
 }
 
 @media (max-width: 700px) {
-	#cherub p {
+	#mobile p {
 		font-size: 15px;
 		line-height: 17px;
 		word-spacing: 3px;
 	}
-	#cherub h2 {
+	#mobile h2 {
 		font-size: 20px;
 	}
-	#cherub a {
+	#mobile a {
 		font-size: 16px;
 		padding: 6px 10%;
 	}
-	#cherub img {
+	#mobile img {
 		height: 80px;
 	}
 }
 
 @media (max-width: 400px) {
-	#cherub p {
+	#mobile p {
 		font-size: 9px;
 		line-height: 10px;
 	}
-	#cherub h2 {
+	#mobile h2 {
 		font-size: 12px;
 	}
-	#cherub a {
+	#mobile a {
 		font-size: 9px;
 	}
 }
@@ -1478,7 +1478,7 @@ div.shadow:hover {
 
 /*for top img*/
 
-div.coworking-page, div.entrep-page, div.internship-page, div.about-page, div.parking-page, div.awesomeincgame-page, div.TAS-page  {
+div.coworking-page, div.service-page, div.internship-page, div.about-page, div.parking-page, div.awesomeincgame-page, div.TAS-page  {
 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -1497,7 +1497,7 @@ div.coworking-page { background-image: url("/assets/img/coworking-head.jpg") }
 
 div.parking-page { background-image: url("/assets/img/parking-head-4.jpg") }
 
-div.entrep-page { background-image: url("/assets/img/entrep-head.jpg"); margin-top:20px; }
+div.service-page { background-image: url("/assets/img/entrep-head.jpg"); margin-top:20px; }
 
 div.internship-page { background-image: url("/assets/img/internships-tree.jpg") }
 
@@ -2507,12 +2507,12 @@ div#mc_embed_signup {
 	background: black;
 }
 
-#fellowship .modal-dialog {
+.pic-right .modal-dialog {
 	width: 800px !important;
 	padding-top: 5px;
 }
 
-#fellowship .modal-content {
+.pic-right .modal-content {
 	height: 650px !important;
 }
 
