@@ -7,6 +7,12 @@ html, body {height: 100%;}
     margin-top: 25px;
     margin-bottom: 25px;
 }
+
+.temp-div {
+    height:35px; 
+    width:100%; 
+    background-color:rgb(29, 44, 140);
+}
 div[class^='col-lg']{
     margin-top: 50px;
     margin-bottom: 50px;
