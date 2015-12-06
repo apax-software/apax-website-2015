@@ -1,3 +1,24 @@
+.navbar-default {
+    margin-bottom: 0px;
+    border: none;
+}
+.navbar .container, .navbar .navbar-inner {
+    margin-right: 0;
+    padding-right: 0;
+}
+.navbar .community-nav {
+    padding-right: 15px;
+}
+.community-nav {
+    background-color:rgb(197, 133, 142);
+    color: white;
+    /*border-top: red 1px solid;*/
+}
+.top-nav-bar {
+    height:15px; 
+    width:100%; 
+    background-color:rgb(197, 133, 142);
+}
 html, body {height: 100%;}
 #wrap {min-height: 50%;}
 #main {overflow:auto;
@@ -17,10 +38,12 @@ div[class^='col-lg']{
     margin-top: 50px;
     margin-bottom: 50px;
 }
-footer {position: relative;
+footer {
+    position: relative;
     /*margin-top: -150px;  negative value of footer height 
     height: 150px;*/
-    clear:both;} 
+    clear:both;
+} 
 
 .ic_container{
     vertical-align:baseline;
@@ -178,6 +201,7 @@ div.teammate {
     border-radius: 50%;
     margin-top: 10px 
 }
+
 
 
 
