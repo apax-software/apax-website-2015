@@ -150,13 +150,17 @@ footer {position: relative;
 .row {
     margin: 25px 0;
 }
-#features i {
-    font-size: 10em;
-    color: #232323;
+#features img {
     text-align: center;
+    -webkit-filter: grayscale(1); /* Webkit */
+    filter: gray; /* IE6-9 */
+
 }
-#features i:hover {
-    color: #254BC4;
+#features img:hover {
+    text-align: center;
+    -webkit-filter: none; /* Webkit */
+    filter: none; /* IE6-9 */
+
 }
 
 /********************** ABOUT PAGE ****************************/
