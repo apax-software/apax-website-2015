@@ -8,6 +8,10 @@ html, body {height: 100%;}
     margin-bottom: 25px;
 }
 
+.grey-bg {
+    background-color: rgb(222, 222, 222);
+}
+
 .temp-div {
     height:35px; 
     width:100%; 
@@ -21,7 +25,43 @@ footer {position: relative;
     /*margin-top: -150px;  negative value of footer height 
     height: 150px;*/
     clear:both;} 
+footer .col-lg-4, footer .col-xs-4 {
+    background-color: transparent;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0px; 
+    /*height: none;*/
+}
+footer h4{
+    color: rgb(200, 200, 200);
+    font-weight: 400;
+}
+footer .row {
+    margin: 0 0;
+}
+footer hr {
+    margin-right: -50px;
+}
+footer hr.last {
+    margin-right: 78px; 
+}
+footer hr.first {
+    margin-left: 32px; 
+}
+footer li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+footer a {
+    color: rgb(165, 165, 165);
+    font-size: 24px;
+}
+footer img {
+    position: absolute;
+    left: 60px;
+    top: 8px;
 
+}
 .ic_container{
     vertical-align:baseline;
     margin:10px;
@@ -71,44 +111,6 @@ footer {position: relative;
     font-size:11px;
 }
 
-@media (max-width: 1800px) {
-    #youtube-channel div#youmax {
-        padding-top: 50px;
-    }
-    #youmax .youmax-subscribe {
-        position: absolute;
-        margin-left: 85.5%;
-        margin-top: 8%;
-    }
-}
-
-@media (max-width: 991px) {
-    #youtube-channel div#youmax {
-        padding-top: 87px;
-    }
-    #youmax .youmax-subscribe {
-        margin-top: 14%;
-        margin-left: 80%
-    }
-}
-
-#youtube-channel span.youmax-tab-hover { 
-    background-color: #d9534f !important;
-}
-
-#youmax, #youtube-channel #youmax-tabs, #youmax-video-list-div {
-    background-color: #f8f8f8 !important;
-}
-
-#youmax .youmax-video-list-title {
-    color: black;
-}
-
-#youmax #youmax-header {
-    height: 175px;
-}
-
-
 #CustInfo{
     width:100%;
     padding:5px;
@@ -150,13 +152,13 @@ footer {position: relative;
 .row {
     margin: 25px 0;
 }
-#features img {
+#features img, .segment img {
     text-align: center;
     -webkit-filter: grayscale(1); /* Webkit */
     filter: gray; /* IE6-9 */
 
 }
-#features img:hover {
+#features img:hover, .segment img:hover {
     text-align: center;
     -webkit-filter: none; /* Webkit */
     filter: none; /* IE6-9 */
