@@ -352,26 +352,6 @@ input[type="submit"] {
 	font-weight: 500;
 	color: #2e2e2e;
 }
-
-#cv {
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
-
-#cv .glyphicon {
-	font-size: 60px;
-	color: white;
-}
-
-#cv h3 {
-	color: white;
-}
-
-#cv p {
-	font-weight: 500;
-	color: white;
-}
-
 /* Dark Blue Wrap change by David to Ainc Red */
 #db {
 	background: #333333;

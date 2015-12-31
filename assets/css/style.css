@@ -1,4 +1,8 @@
-html, body {height: 100%;}
+html, body {
+    height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 #wrap {min-height: 50%;}
 #main {overflow:auto;
     padding-bottom: 150px;}
@@ -7,6 +11,31 @@ html, body {height: 100%;}
     margin-top: 25px;
     margin-bottom: 25px;
 }
+/*.mobile {
+    display: none;
+}
+.non-mobile {
+    position: absolute;
+    top: 4px;
+}
+.navbar-header {
+    display: none;
+}
+@media (max-width: 650px) {
+    .non-mobile {
+        display: none;
+    }
+    .mobile {
+        display: block;
+        height: 35px;
+        bottom: 5px;
+        position: absolute;
+    }
+    .navbar-header {
+        display: block;
+    }
+}*/
+
 
 .grey-bg {
     background-color: rgb(222, 222, 222);
@@ -36,6 +65,7 @@ footer h4{
     color: rgb(200, 200, 200);
     font-weight: 400;
 }
+
 footer .row {
     margin: 0 0;
 }
@@ -54,14 +84,27 @@ footer li {
 }
 footer a {
     color: rgb(165, 165, 165);
-    font-size: 24px;
 }
 footer img {
-    position: absolute;
-    left: 60px;
-    top: 8px;
-
+    margin-bottom: 10px;
+}    
+footer hr {
+    margin-top: -10px;
 }
+@media (max-width: 1800px) {
+    footer a {
+        font-size: 24px;
+    }
+}
+@media (max-width: 650px) {
+    footer a {
+        font-size: 12px;
+    }
+    footer h4 {
+        font-size: 15px;
+    }
+}
+
 .ic_container{
     vertical-align:baseline;
     margin:10px;
@@ -170,7 +213,21 @@ footer img {
     color: black;
 }
 
-/********************** ABOUT PAGE ****************************/
+/********************** SERVICES PAGE ****************************/
+@media (max-width: 1800px) {
+    .Services p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+@media (max-width: 650px) {
+    .Services p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+/********************** TEAM PAGE ****************************/
 
 div.teammate {
     background-color: #aaa;
