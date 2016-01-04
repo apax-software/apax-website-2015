@@ -1122,7 +1122,7 @@ div.shadow:hover {
 		padding-top: 25px;
 	}
 
-	.pic-right a, .segment a  {
+	.pic-right a.btn, .segment a.btn  {
 		font-size: 32px;
 		font-weight: 400;
 		font-family: "open sans";
@@ -1232,7 +1232,7 @@ div.shadow:hover {
 		height: 100%;
 	}
 
-	.segment a {
+	.segment a.btn {
 		font-size: 24px;
 	}
 }
