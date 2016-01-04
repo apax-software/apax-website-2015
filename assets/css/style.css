@@ -50,10 +50,12 @@ div[class^='col-lg']{
     margin-top: 50px;
     margin-bottom: 50px;
 }
-footer {position: relative;
+footer {
+    position: relative;
     /*margin-top: -150px;  negative value of footer height 
     height: 150px;*/
-    clear:both;} 
+    clear:both;
+} 
 footer .col-lg-4, footer .col-xs-4 {
     background-color: transparent;
     margin-top: 0;
@@ -69,18 +71,23 @@ footer h4{
 footer .row {
     margin: 0 0;
 }
-footer hr {
-    margin-right: -50px;
-}
-footer hr.last {
-    margin-right: 78px; 
-}
-footer hr.first {
-    margin-left: 32px; 
-}
 footer li {
     list-style-type: none;
     margin-bottom: 10px;
+}
+.footer table tbody th {
+    border-bottom: 1px solid #dddddd;
+    border-top: none;
+    font-size: 1.75em;
+    color: #dddddd;
+    font-weight: 600;
+}
+.footer table tbody th:last-child {
+    width: 25%;
+}
+.footer table tbody tr td {
+    border-top: none;
+    padding: 5px;
 }
 footer a {
     color: rgb(165, 165, 165);
@@ -88,8 +95,8 @@ footer a {
 footer img {
     margin-bottom: 10px;
 }    
-footer hr {
-    margin-top: -10px;
+footer hr:last-child {
+    width: 80%;
 }
 @media (max-width: 1800px) {
     footer a {
