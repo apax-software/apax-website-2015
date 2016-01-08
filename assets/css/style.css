@@ -44,7 +44,7 @@ html, body {
 .temp-div {
     height:35px; 
     width:100%; 
-    background-color:rgb(29, 44, 140);
+    background-color: #C31337;
 }
 div[class^='col-lg']{
     margin-top: 50px;
@@ -107,7 +107,7 @@ footer hr:last-child {
     footer a {
         font-size: 12px;
     }
-    footer h4 {
+    .footer table tbody th {
         font-size: 15px;
     }
 }
@@ -249,9 +249,11 @@ div.teammate {
     margin-top: 10px 
 }
 
+/********************** WORK PAGE ****************************/
 
-
-
+#work h2 {
+    color: #C31337;
+}
 
 
 
