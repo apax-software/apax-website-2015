@@ -54,10 +54,10 @@ body {
 	width: 100%;
 	background-color: $color_cardinal_approx;
 }
-div[class^='col-lg'] {
+/*div[class^='col-lg'] {
 	margin-top: 50px;
 	margin-bottom: 50px;
-}
+}*/
 footer {
 	position: relative;
 	clear: both;
@@ -215,18 +215,22 @@ footer {
 }
 #features img {
 	text-align: center;
-	filter: $gray;
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
 	&:hover {
 		text-align: center;
 		filter: none;
+		-webkit-filter: none;
 	}
 }
 .segment img {
 	text-align: center;
-	filter: $gray;
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
 	&:hover {
 		text-align: center;
 		filter: none;
+		-webkit-filter: none;
 	}
 }
 #history p {
