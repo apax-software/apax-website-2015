@@ -194,6 +194,9 @@ body {
 }*/
 .footer {
 	table tbody {
+		a:hover {
+			color: #dedede;
+		}
 		th {
 			border-bottom: 1px solid $color_alto_approx;
 			border-top: none;

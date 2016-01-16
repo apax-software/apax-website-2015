@@ -33,15 +33,25 @@ a.btn-red:hover {
 
 <script>
 $( document ).ready(function() {
-	$('.Services .row').each(function() {
-		var h = $(this).height();
-		var kid = $(this).find('img')
-		var h_img = $(kid).height();
-		var mar = h/2 - (h_img/2);
+	if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) { // Check if mobile
+		$('.Services .row').each(function() {
+			var h = $(this).height();
+			
+			var img_kid = $(this).find('img');
+			var p_kid = $(this).find('.info');
+			
+			var h_img = $(img_kid).height();
+			var h_p = $(p_kid).height();
+			
+			var img_mar = h/2 - (h_img/2);
+			var p_mar = h/2 - (h_p/2);
 
-		$(kid).css('margin-top', mar);
-		console.log(kid, h/2, h_img)
-	});
+			console.log(img_mar, p_mar);
+
+			$(img_kid).css('margin-top', img_mar);
+			$(p_kid).css('margin-top', p_mar);
+		});
+	}
 });
 
 </script>
@@ -53,7 +63,7 @@ $( document ).ready(function() {
 			<div class="col-lg-6 col-xs-4">
 				<a href="/work"><img class="center" src="/assets/img/Icons/mobile_large_red.png" alt="mobile apps"></a>
 			</div>
-			<div class="col-lg-6 col-xs-8">
+			<div class="col-lg-6 col-xs-8 info">
 				<h2> Mobile Apps </h2>
 				<p> We have the most experience and offer the best quality of service for building mobile platforms! We support iOS, Android, Windows 10 Mobile, and cross-platform products built from the ground up. </p>
 				<!-- <a class="btn btn-red" href="/portfolio">Portfolio</a> -->
