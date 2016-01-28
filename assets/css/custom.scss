@@ -9,10 +9,36 @@ $color_pippin_approx: rgb(255,222,223);
 $gray: gray;
 $black: black;
 $color_silver_chalice_approx: #aaa;
-
+/*
 //mobile sizes
 $break-small: 500px;
-$break-large: 1200px;
+$break-large: 1200px;*/
+
+
+//sizes
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$mobile-width: $tablet-width - 1;
+
+@mixin tablet {
+	@media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+		@content;
+	}
+}
+
+@mixin mobile {
+	@media (max-width: #{$mobile-width}) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (min-width: #{$desktop-width}) {
+		@content;
+	}
+}
+
 .subheader .img-overlay {
 	h1, h2 {
 		color: white;
@@ -29,18 +55,31 @@ $break-large: 1200px;
 		margin-top: 0;
 		padding-top: 0;
 	}
-	@media screen and (max-width: $break-small) {
-		h1 {
+	
+	h1 {
+		@include mobile {
 			font-size: 35px;
 		}
-		h2 {
+	}
+	h2 { 
+		@include mobile {
 			font-size: 25px;
 		}
 	}
 }
 
+.Services {
+	@include mobile {
+		img {
+			margin-left: 25%;
+			width: 50%;
+			margin-top: 0;
+		}
+	}
+}
+
 #features {
-	@media screen and (max-width: $break-small) {
+	@include mobile {
 		img {
 			width: 25%;	
 		}
@@ -65,7 +104,7 @@ $break-large: 1200px;
 	img {
 		width: 35%;
 	}
-	@media screen and (max-width: $break-small) {
+	@include mobile {
 		h2 {
 			font-size: 1.25em;
 		}
@@ -76,7 +115,7 @@ $break-large: 1200px;
 	}
 }
 #contact {
-	@media screen and (max-width: $break-small) {
+	@include mobile {
 		h3 {
 			font-size: 1em;
 		}
@@ -90,6 +129,26 @@ $break-large: 1200px;
 		}
 	}
 }
+
+.About {
+	p {
+		color: $black;
+	}
+	h3 {
+		margin: 30px;
+	}
+	@include mobile {
+		h3 {
+			font-size: 1.5em;
+			margin: 20px;
+		}
+		p {
+			font-size: 1em;
+			line-height: 1.4em;
+		}
+	}
+}
+
 .Team {
 	.col-md-4 {
 		padding: 0 60px;
@@ -134,7 +193,7 @@ $break-large: 1200px;
 	p.phone {
 		float: right;
 	}
-	@media screen and (max-width: $break-small) {
+	@include mobile {
 		p.phone {
 			float: left;
 		}
@@ -215,7 +274,7 @@ body {
 			width: 35px;
 			height: 35px;
 		}
-		@media screen and (max-width: $break-small) {
+		@include mobile {
 			th {
 				font-size: 1em;
 			}
@@ -371,9 +430,6 @@ body {
 		filter: none;
 		-webkit-filter: none;
 	}
-}
-#history p {
-	color: $black;
 }
 div.teammate {
 	background-color: $color_silver_chalice_approx;
