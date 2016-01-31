@@ -114,7 +114,7 @@ $mobile-width: $tablet-width - 1;
 		}
 	}
 }
-#contact {
+.Contact, #contact {
 	@include mobile {
 		h3 {
 			font-size: 1em;
@@ -127,8 +127,12 @@ $mobile-width: $tablet-width - 1;
 			height: 28px;
 			font-size: 14px;
 		}
+		.large-box {
+			height: 100px;
+		}
 	}
 }
+
 
 .About {
 	p {
@@ -199,6 +203,15 @@ $mobile-width: $tablet-width - 1;
 		}
 		p {
 			margin-bottom: 5px;
+		}
+		img {
+			padding-top: 20px;
+		}
+		hr {
+			margin: 0.25em;
+		}
+		h3 {
+			margin-top: 10px;
 		}
 	}
 }
@@ -419,6 +432,9 @@ body {
 	&:hover {
 		filter: none;
 		-webkit-filter: none;
+	}
+	@include mobile {
+		padding-top: 20px;
 	}
 }
 .segment img {
