@@ -179,26 +179,6 @@ input[type="submit"] {
    Wrap Sections
    ========================================================================== */
 
-#headerwrap {
-	background: url(../img/header-bg.jpg) no-repeat center top;
-	/*margin-top: 50px;*/
-	padding-top:20px;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 500px;
-	width: 100%;
-	
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 
 /* David changed from White to Ainc Gray */
 #headerwrap h1 {
@@ -954,21 +934,6 @@ div.shadow:hover {
 	font-weight: 600;
 	text-align: center;
 }
-
-
-div.TAS-page { background-image: url("/assets/img/TAServices/Optimized-TAServicesBanner05-crop.jpg") }
-
-div.coworking-page { background-image: url("/assets/img/coworking-head.jpg") }
-
-div.parking-page { background-image: url("/assets/img/parking-head-4.jpg") }
-
-div.service-page { background-image: url("/assets/img/entrep-head.jpg"); margin-top:20px; }
-
-div.internship-page { background-image: url("/assets/img/internships-tree.jpg") }
-
-div.about-page { background-image: url("/assets/img/aboutpage.jpg") }
-
-div.awesomeincgame-page { background-image: url("/assets/img/awesomeincgame-banner.png") }
 
 @media screen and (max-width: 1000px) {
 	.img-overlay {

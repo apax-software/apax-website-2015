@@ -39,6 +39,33 @@ $mobile-width: $tablet-width - 1;
 	}
 }
 
+#headerwrap {
+	background: url(../img/headers/Working.png) no-repeat center top;
+	/*margin-top: 50px;*/
+	padding-top:20px;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 500px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.subheader {
+	background-repeat: no-repeat;
+	background-size: 100%;	
+	
+}
+
+
 .subheader .img-overlay {
 	h1, h2 {
 		color: white;
@@ -69,6 +96,10 @@ $mobile-width: $tablet-width - 1;
 }
 
 .Services {
+	.services-page {
+		background-image: url("/assets/img/headers/Meeting.png");
+		background-position: 0 -100px;
+	}
 	@include mobile {
 		img {
 			margin-left: 25%;
@@ -92,6 +123,9 @@ $mobile-width: $tablet-width - 1;
 }
 
 .Work {
+	.work-page {
+		background-image: url("/assets/img/headers/Mac.png");
+	}
 	h2 {
 		font-size: 30px;
 		color: $color_cardinal_approx;
@@ -115,6 +149,9 @@ $mobile-width: $tablet-width - 1;
 	}
 }
 .Contact, #contact {
+	.contact-page {
+		background-image: url("/assets/img/headers/Typing.png");
+	}
 	@include mobile {
 		h3 {
 			font-size: 1em;
@@ -134,7 +171,11 @@ $mobile-width: $tablet-width - 1;
 }
 
 
+
 .About {
+	.about-page {
+		background-image: url("/assets/img/headers/Coding.png");
+	}
 	p {
 		color: $black;
 	}
@@ -154,6 +195,10 @@ $mobile-width: $tablet-width - 1;
 }
 
 .Team {
+	.about-page {
+		background-image: url("/assets/img/headers/Team.png");
+		background-position: 0px -100px;
+	}
 	.col-md-4 {
 		padding: 0 60px;
 	}
