@@ -145,13 +145,14 @@ $(document).ready(function() {
 	}
 
 	//make bg image full size
-
-	$("#headerwrap").css("height", getWindowHeight()) - 50; //for navbar
-	$("#headerwrap").css("width", getWindowWidth());
-	$(window).resize(function() {
-		$("#headerwrap").css("height", getWindowHeight())- 50; 
+	if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		$("#headerwrap").css("height", getWindowHeight()) - 50; //for navbar
 		$("#headerwrap").css("width", getWindowWidth());
-	})
+		$(window).resize(function() {
+			$("#headerwrap").css("height", getWindowHeight())- 50; 
+			$("#headerwrap").css("width", getWindowWidth());
+		});
+	}
 });
 
 var getWindowHeight = function() {
