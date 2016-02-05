@@ -32,31 +32,9 @@ a.btn-red:hover {
     	<h1>Services</h1>
     </div>
 </div>
+
 <div class="temp-div">
 </div>
-
-<script>
-$( document ).ready(function() {
-	if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) { // Check if mobile
-		$('.Services .row').each(function() {
-			var h = $(this).height();
-			
-			var img_kid = $(this).find('img');
-			var p_kid = $(this).find('.info');
-			
-			var h_img = $(img_kid).height();
-			var h_p = $(p_kid).height();
-			
-			var img_mar = h/2 - (h_img/2);
-			var p_mar = h/2 - (h_p/2);
-
-			$(img_kid).css('margin-top', img_mar);
-			$(p_kid).css('margin-top', p_mar);
-		});
-	}
-});
-
-</script>
 
 <span class="anchor" id="mobile"></span>
 <div id="software" class="segment">
