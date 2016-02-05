@@ -39,6 +39,13 @@ $mobile-width: $tablet-width - 1;
 	}
 }
 
+.nav > li > a {
+	@include tablet {
+		padding:15px 10px;	
+	}
+	
+}
+
 #headerwrap {
 	background: url(../img/headers/Working.png) no-repeat center top;
 	/*margin-top: 50px;*/
@@ -209,6 +216,10 @@ $mobile-width: $tablet-width - 1;
 	h3 {
 		margin: 30px;
 	}
+	li {
+		font-size: 20px;
+		line-height: 33px;
+	}
 	@include mobile {
 		h3 {
 			font-size: 1.5em;
@@ -227,6 +238,9 @@ $mobile-width: $tablet-width - 1;
 		background-position: 0px -100px;
 		@include mobile {
 			background-position: 0 10px;
+		}
+		@include tablet {
+			background-position: 0 0;
 		}
 	}
 	.col-md-4 {
