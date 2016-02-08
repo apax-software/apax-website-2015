@@ -19,10 +19,12 @@
     <title>{% if page.title %}{{ page.title }} | {{ site.name }}{% else %}{{ site.name }} - Technology. Creativity. Startups.{% endif %}</title>
 
     <!-- dropdown menu javascript -->
+
     <script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/js/jquery.js"></script>
     <script src="/assets/js/jquery-1.3.2.js"type="text/javascript"></script>
     <script src="/assets/js/jquery-1.9.1.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
     <script src="/assets/js/dropdown.js" type="text/javascript" defer="defer"></script>
     <script src="/assets/js/greyscale.js" type="text/javascript" defer="defer"></script>  
   
@@ -81,22 +83,23 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul id="sddm" class="nav navbar-nav navbar-right" style="min-width:0"> <!-- RIGHT ALIGNED NAVBAR -->
-            <li class="dropdown">   <!-- ABOUT -->
+            <li>   <!-- ABOUT -->
                 <a href="/about/">About</a>
               </li> 
-            <li class="dropdown">  <!-- SERVICES -->
+            <li>  <!-- SERVICES -->
                 <a href="/services/">Services</a>
               </li>
-            <li class="dropdown">    <!-- Work -->
+            <li>    <!-- Work -->
                 <a href="/portfolio/">Portfolio</a>
             </li>
-            <li class="dropdown">   <!-- Team -->
+            <li>   <!-- Team -->
                 <a href="/team/">Team </a>
               </li>
-            <li class="dropdown"> <!-- Contact -->
+            <li> <!-- Contact -->
                 <a href="/contact/">Contact</a>
-              </li>
-              <li class="dropdown"> <!-- Community -->
+            </li>
+            </li>
+            <li> <!-- Community -->
 
                 <a href="#" 
                 onmouseover="mopen('m5')" 
