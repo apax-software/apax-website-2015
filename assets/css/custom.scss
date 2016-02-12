@@ -39,11 +39,15 @@ $mobile-width: $tablet-width - 1;
 	}
 }
 
-.nav > li > a {
-	@include tablet {
-		padding:15px 10px;	
+.nav {
+	li.active > a {
+		background-color: #e6e6e6;
 	}
-	
+		> li > a {
+		@include tablet {
+			padding:15px 10px;	
+		}
+	}
 }
 
 #headerwrap {
