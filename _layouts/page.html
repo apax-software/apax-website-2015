@@ -83,21 +83,17 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul id="sddm" class="nav navbar-nav navbar-right" style="min-width:0"> <!-- RIGHT ALIGNED NAVBAR -->
-            <li>   <!-- ABOUT -->
-                <a href="/about/">About</a>
+            <li {% if page.path contains 'about' %} class="active" {% endif %}>   <!-- ABOUT -->
+                <a href="/about/" >About</a>
               </li> 
-            <li>  <!-- SERVICES -->
-                <a href="/services/">Services</a>
-              </li>
-            <li>    <!-- Work -->
+            <li {% if page.path contains 'portfolio' %} class="active" {% endif %}>  <!-- PORTFOLIO -->
                 <a href="/portfolio/">Portfolio</a>
-            </li>
-            <li>   <!-- Team -->
-                <a href="/team/">Team </a>
               </li>
-            <li> <!-- Contact -->
-                <a href="/contact/">Contact</a>
+            <li {% if page.path contains 'perks' %} class="active" {% endif %}>    <!-- PERKS -->
+                <a href="/perks/">Perks</a>
             </li>
+            <li {% if page.path contains 'apply' %} class="active" {% endif %}>   <!-- APPLY -->
+                <a href="/apply/">Apply</a>
             </li>
             <li> <!-- Community -->
 
