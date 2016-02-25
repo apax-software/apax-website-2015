@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+	$("a.more-button").click(function() {
+		$(this).css('display', 'none');
+	});
 	// center images for text
 	if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) { // Check if mobile
 
