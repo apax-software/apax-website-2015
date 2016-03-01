@@ -188,6 +188,12 @@ $mobile-width: $tablet-width - 1;
 				margin-left: 5%;
 			}
 		}
+		h3, a {
+			color: $color_cardinal_approx;
+			&:hover {
+				color: #999999;
+			}
+		}
 		h3 {
 			padding: 0 10%;
 			font-size: 24px;
