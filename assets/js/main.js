@@ -4,38 +4,38 @@ $(document).ready(function() {
 		$(this).css('display', 'none');
 	});
 	// center images for text
-	if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) { // Check if mobile
+	// if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) { // Check if mobile
 
-		$('.Portfolio .row').each(function() {
-			var h = $(this).height();
-			var img_kid = $(this).find('img');
-			var p_kid = $(this).find('.info');
-			var h_img = $(img_kid).height();
-			var img_mar = h/2 - (h_img/2);
-			var p_mar = h/2 - (p_kid/2);
+	// 	$('.Portfolio .row').each(function() {
+	// 		var h = $(this).height();
+	// 		var img_kid = $(this).find('img');
+	// 		var p_kid = $(this).find('.info');
+	// 		var h_img = $(img_kid).height();
+	// 		var img_mar = h/2 - (h_img/2);
+	// 		var p_mar = h/2 - (p_kid/2);
 
-			$(img_kid).css('margin-top', img_mar);
-			$(p_kid).css('margin-top', p_mar);
-		});
-	}
+	// 		$(img_kid).css('margin-top', img_mar);
+	// 		$(p_kid).css('margin-top', p_mar);
+	// 	});
+	// }
 
-	if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) { // Check if mobile
-		$('.Services .row').each(function() {
-			var h = $(this).height();
+	// if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) { // Check if mobile
+	// 	$('.Services .row').each(function() {
+	// 		var h = $(this).height();
 			
-			var img_kid = $(this).find('img');
-			var p_kid = $(this).find('.info');
+	// 		var img_kid = $(this).find('img');
+	// 		var p_kid = $(this).find('.info');
 			
-			var h_img = $(img_kid).height();
-			var h_p = $(p_kid).height();
+	// 		var h_img = $(img_kid).height();
+	// 		var h_p = $(p_kid).height();
 			
-			var img_mar = h/2 - (h_img/2);
-			var p_mar = h/2 - (h_p/2);
+	// 		var img_mar = h/2 - (h_img/2);
+	// 		var p_mar = h/2 - (h_p/2);
 
-			$(img_kid).css('margin-top', img_mar);
-			$(p_kid).css('margin-top', p_mar);
-		});
-	}
+	// 		$(img_kid).css('margin-top', img_mar);
+	// 		$(p_kid).css('margin-top', p_mar);
+	// 	});
+	// }
 
 	//Hover over home-page buttons
 	$("#left-content").hide();

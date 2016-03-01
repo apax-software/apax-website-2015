@@ -6,7 +6,7 @@ $color_cardinal_approx: #c31337;
 $color_pumice_approx: rgb(200, 200, 200);
 $color_shady_lady_approx: rgb(165, 165, 165);
 $color_pippin_approx: rgb(255,222,223);
-$gray: gray;
+$gray: #CECECE;
 $black: black;
 $color_silver_chalice_approx: #aaa;
 /*
@@ -150,19 +150,57 @@ $mobile-width: $tablet-width - 1;
 	}
 }
 
+.gradient {
+	background: #cecece; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #cecece 0%, #ffffff 49%, #ffffff 51%, #cecece 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #cecece 0%,#ffffff 49%,#ffffff 51%,#cecece 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #cecece 0%,#ffffff 49%,#ffffff 51%,#cecece 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cecece', endColorstr='#cecece',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.shadow {
+	moz-box-shadow:    1px 1px 3px 2px $gray;
+	-webkit-box-shadow: 1px 1px 3px 2px $gray;
+	box-shadow:         1px 1px 3px 2px $gray;
+}
+
 .Portfolio {
-	.portfolio-page {
-		background-image: url("/assets/img/headers/Mac.png");
-	}
 	h2 {
 		font-size: 30px;
-		color: $color_cardinal_approx;
+		color: white;
 	}
-	p {
-		line-height: 23px;
-		font-weight: 400;
-		text-align: justify;
+	.company {
+
+		.img-container {
+			border: 1px solid gray;
+			height: 175px;
+			width: 80%;
+			margin-left: 10%;
+			&:before {
+				content: ' ';
+				display: inline-block;
+				vertical-align: middle;
+				height: 100%;
+			}
+			img {
+				vertical-align: middle;
+				display: inline-block;
+				width: 90%;
+				margin-left: 5%;
+			}
+		}
+		h3 {
+			padding: 0 10%;
+			font-size: 24px;
+		}
+		p {
+			padding: 0 10%;
+			font-size: 12px;
+			line-height: 18px;
+			font-weight: 400;
+			text-align: justify;
+		}
 	}
+	
 	img {
 		width: 35%;
 	}
@@ -203,9 +241,6 @@ $mobile-width: $tablet-width - 1;
 }
 
 .About {
-	.about-page {
-		background-image: url("/assets/img/headers/Coding.png");
-	}
 	p {
 		margin-top: 40px;
 		font-size: 1.2em;
