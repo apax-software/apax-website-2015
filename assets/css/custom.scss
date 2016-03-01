@@ -6,6 +6,7 @@ $color_cardinal_approx: #c31337;
 $color_pumice_approx: rgb(200, 200, 200);
 $color_shady_lady_approx: rgb(165, 165, 165);
 $color_pippin_approx: rgb(255,222,223);
+$color_light_red: #C90A1F;
 $gray: gray;
 $black: black;
 $color_silver_chalice_approx: #aaa;
@@ -78,9 +79,17 @@ $mobile-width: $tablet-width - 1;
     @include mobile {
     	height: 300px;
     }
-
+    a {
+    	background-color: $color_light_red;
+    	color: white;
+    	font-weight: 400;
+    	border-radius: 5px;
+    	&:hover {
+    		background-color: $gray;
+    	}
+    }
     h1, h2 {
-    	padding-left: 100px;
+    	/*padding-left: 100px;*/
     	@include mobile {
     		padding-left: 0;
     		font-size: 1em;
@@ -195,6 +204,9 @@ $mobile-width: $tablet-width - 1;
 .Contact, #contact {
 	.contact-page {
 		background-image: url("/assets/img/headers/Typing.png");
+	}
+	p {
+		margin: 20px;
 	}
 	@include mobile {
 		h3 {
