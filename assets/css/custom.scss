@@ -18,10 +18,11 @@ $break-large: 1200px;*/
 
 //sizes
 
-$tablet-width: 768px;
-$desktop-width: 1024px;
+$tablet-width: 751px;
+$desktop-width: 1000px;
 $xlarge-width: 1400px;
 $mobile-width: $tablet-width - 1;
+$small-mobile-width: 640px;
 
 @mixin tablet {
 	@media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
@@ -31,6 +32,12 @@ $mobile-width: $tablet-width - 1;
 
 @mixin mobile {
 	@media (max-width: #{$mobile-width}) {
+		@content;
+	}
+}
+
+@mixin small-mobile {
+	@media (max-width: #{$small-mobile-width}) {
 		@content;
 	}
 }
@@ -83,17 +90,43 @@ $mobile-width: $tablet-width - 1;
     	background-color: $color_light_red;
     	color: white;
     	font-weight: 400;
+    	font-size: 22px;
     	border-radius: 5px;
+    	border-color: transparent;
+    	margin-top: 20px;
     	&:hover {
     		background-color: $gray;
     	}
+    	@include mobile {
+    		font-size: 16px;
+    	}
     }
-    h1, h2 {
-    	/*padding-left: 100px;*/
+    h1 {
+    	color: 333333;
+		font-size: 55px;
+		font-weight: 100;
+		letter-spacing: 2px;
+		text-align: left;
+		margin-top: 70px;
+		@include tablet {
+    		font-size: 48px;
+    	}
     	@include mobile {
     		padding-left: 0;
-    		font-size: 1em;
+    		font-size: 34px;
     	}
+    	@include small-mobile {
+			font-size: 28px;
+		}
+    }
+    h1, h2, a {
+    	margin-left: 75px;
+		@include tablet {
+			margin-left: 0;
+		}
+		@include mobile {
+			margin-left: 10px;
+		}
     }
 }
 
