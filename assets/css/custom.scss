@@ -6,7 +6,8 @@ $color_cardinal_approx: #c31337;
 $color_pumice_approx: rgb(200, 200, 200);
 $color_shady_lady_approx: rgb(165, 165, 165);
 $color_pippin_approx: rgb(255,222,223);
-$gray: #CECECE;
+$color_gray: #CECECE;
+$color_light_gray: rgb(236, 236, 236);
 $black: black;
 $color_silver_chalice_approx: #aaa;
 /*
@@ -413,6 +414,130 @@ $mobile-width: $tablet-width - 1;
 		p {
 			font-size: 1em;
 			line-height: 1.4em;
+		}
+	}
+}
+
+.Perks {
+	color: black;
+	@include desktop {
+		.container.full {
+			margin-left: 0;
+			padding-left: 0;
+			margin-right: 0;
+			padding-right: 0;
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+
+	img {
+		width: 150px;
+		margin: auto;
+		display: block;
+		margin-bottom: 15px;
+	}
+	h3 {
+		font-size: 34px;
+		font-family: Handlee;
+		text-align: left;
+		margin-left: 8.5%;
+		margin-bottom: 3%;
+	}
+	
+	p {
+		font-size: 14px;
+		width: 90%;
+		word-spacing: 2px;
+		padding-left: 10%;
+		margin-top: 30px;
+		line-height: 18px;
+		text-align: left;
+	}
+	.col-lg-6 {
+		margin-bottom: 50px;
+	}
+	#talent {
+		background-color: $color_light_gray;
+		padding-bottom: 40px;
+
+	}
+	#space, #support, #experience {
+		background-color: white;
+		.col-lg-6 {
+			background: none;
+			border-right: 2px solid $color_light_gray;
+			&:last-child {
+				border-right: none;
+			}
+		}
+
+		p {
+			width: 90%;
+			padding-left: 10%;
+			min-height: 60px;
+			margin-bottom: 0;
+			&:last-child {
+				min-height: 0;
+				margin-top: 0;
+			}	
+		}
+
+	}
+
+	#support {
+		background-color: $color_light_gray;
+		.col-lg-6 {
+			border-right: 2px solid white;
+			&:last-child {
+				border-right: none;
+			}
+		}
+		p {
+			 min-height: 50px;
+			 width: 70%;
+			 margin-left: 15%;
+			 &:last-child {
+			 	min-height: 0;
+			 }
+		}
+	}
+
+	.col-lg-4 {
+		background: none;
+		border-right: 2px solid white;
+		&:last-child {
+			border-right: none;
+		}
+		p {
+			min-height: 50px;
+			margin-bottom: 0;
+		}
+		p:last-child {
+			min-height: 0;
+			margin-top: 0;
+		}
+	}
+
+	b {
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	a {
+		color: rgb(220, 32, 37);
+	}
+	div.col-lg-12 {
+		padding-left: 0;
+	}
+
+	div {
+		&.col-lg-4 {
+			padding-right: 0;
+		}
+		&.row {
+			margin-bottom: 0;
+			margin-top: 0;
 		}
 	}
 }
