@@ -10,10 +10,13 @@ $color_gray: #CECECE;
 $color_light_gray: rgb(236, 236, 236);
 $black: black;
 $color_silver_chalice_approx: #aaa;
-/*
-//mobile sizes
-$break-small: 500px;
-$break-large: 1200px;*/
+
+//fonts
+@font-face {
+	font-family: 'ThrowMyHands';
+	src: 	url('../fonts/Throw_My_Hands_Up_in_the_Air.woff') format('woff'), /* Pretty Modern Browsers */
+    		url('../fonts/Throw_My_Hands_Up_in_the_Air.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
 
 
 //sizes
@@ -45,6 +48,13 @@ $mobile-width: $tablet-width - 1;
 		padding:15px 10px;	
 	}
 	
+}
+
+/*custom class for offset on small device*/
+@include mobile {
+	.col-xs-offset-1 {
+		margin-left: 8.5%;
+	}
 }
 
 #headerwrap {
@@ -265,23 +275,58 @@ $mobile-width: $tablet-width - 1;
 	}
 	.across {
 		border: 1px solid #ECECEC;
-		height: 201px;
+		min-height: 250px;
+		@include mobile {
+			border: none;
+		}
 		.col-md-8 {
-			background-color: #ECECEC;
+			background-image: url("../img/quotes-bg-thin.png");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-color: rgb(241, 242, 244);
+			min-height: inherit;
+			@include mobile {
+				background-image: url("../img/quotes-bg.png");
+				background-position-x: 70%;
+				background-position-y: 36%;
+				background-size: 125%;
+				p {
+					padding-top: 10%;
+					padding-left: 20%;
+					padding-right: 20%;
+				}
+			}
+			@include tablet {
+				background-image: url("../img/quotes-bg.png");
+				background-size: 125%;
+				background-position: 80% 37%;
+				p {
+					padding-top: 5%;
+					padding-left: 20%;
+					font-size: 20px;
+				}
+			}
 		}
 		p {
 			color: $color_cardinal_approx;
 			font-size: 24px;
 			line-height: 34px;
+			font-family: ThrowMyHands
 		}
-		.row {
+		span {
 			margin: 0;
 			padding: 0;
 			&:first-child {
-				margin-top: 25px;
+				margin-top: 8%;
+				@include tablet {
+					margin-top: 3%;
+				}
 			}
 			&:last-child {
-				margin-bottom: 25px;
+				margin-bottom: 8%;
+				@include tablet {
+					margin-bottom: 3%;
+				}
 			}
 		}
 		a {
@@ -439,9 +484,9 @@ $mobile-width: $tablet-width - 1;
 	}
 	h3 {
 		font-size: 34px;
-		font-family: Handlee;
+		font-family: ThrowMyHands;
 		text-align: left;
-		margin-left: 8.5%;
+		/*margin-left: 8.5%;*/
 		margin-bottom: 3%;
 	}
 	
