@@ -58,7 +58,7 @@ $mobile-width: $tablet-width - 1;
 }
 
 #headerwrap {
-	background: url(../img/headers/Working.png) no-repeat center top;
+	background: url(../img/headers/Entrepreneurs.jpg) no-repeat center top;
 	/*margin-top: 50px;*/
 	padding-top:20px;
 	background-attachment: relative;
@@ -387,6 +387,7 @@ $mobile-width: $tablet-width - 1;
 			font-size: 34px;
 			margin-left: 5%;
 			margin-bottom: 30px;
+			margin-top: 50px;
 			color: $color_cardinal_approx;
 
 		}
@@ -730,6 +731,15 @@ body {
 	a:hover {
 		color: #dedede;
 	}
+	h6 {
+		color: $color_pumice_approx;
+		font-size: 24px;
+		text-align: center;
+		font-weight: 400;
+		&:hover {
+			color: $color_cardinal_approx;
+		}
+	}
 	table tbody {
 		
 		img {
@@ -737,6 +747,10 @@ body {
 			margin-left: 17.5%;
 			filter: grayscale(100%);
 			-webkit-filter: grayscale(100%);
+		}
+		.large-image {
+			width: 55%;
+			margin-left: 22.5%;
 		}
 		th {
 			border-bottom: 1px solid $color_alto_approx;
@@ -753,6 +767,7 @@ body {
 		}
 		tr td {
 			width: 33%;
+			height: 110px;
 			border-top: none;
 			padding: 5px;
 		}
@@ -914,6 +929,18 @@ body {
 	@include mobile {
 		padding-top: 20px;
 	}
+}
+#features {
+	i {
+		font-size: 10em;
+		color: black;
+		&:hover {
+			color: $color_cardinal_approx;
+		}
+	}
+}
+.faq_content {
+	margin-top: 75px;
 }
 .segment img {
 	width: 45%;
