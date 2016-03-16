@@ -1,4 +1,13 @@
+$(document).ready(function () {
+  $(".navbar-nav li a").click(function(event) {
+    $(".navbar-collapse").collapse('hide');
+  });
+});
+
 $(document).ready(function() {
+
+	// mobile navbar collapse
+	
 
 	// center images for text
 	if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) { // Check if mobile

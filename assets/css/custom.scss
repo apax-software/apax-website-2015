@@ -186,6 +186,9 @@ $small-mobile-width: 640px;
 			width: 50%;
 			margin-top: 0;
 		}
+		h2 {
+			font-size: 20px;
+		}
 	}
 	.segment {
 		a:hover {
@@ -194,7 +197,11 @@ $small-mobile-width: 640px;
 		}
 	}
 }
-
+@include mobile {
+	#mobile-none {
+		display: none;
+	}
+}
 #features {
 	@include mobile {
 		img {
@@ -280,10 +287,11 @@ $small-mobile-width: 640px;
 			font-size: 1.5em;
 			margin: 20px;
 		}
-		p {
+		p, li {
 			font-size: 1em;
 			line-height: 1.4em;
 		}
+
 	}
 }
 
