@@ -84,7 +84,7 @@ myApp.controller("appController", ["$scope", function($scope) {
 <!-- <script src="/assets/js/angular.min.js" type="text/javascript" defer="defer"></script>  -->
 
 
-<div class="container" ng-controller="appController">
+<div ng-app="myApp" class="container" ng-controller="appController">
     <ul class="thumbnails row">        
         <li ng-repeat="mentor in mentors|orderBy:'lastname'" class="col-md-2 col-sm-3 col-xs-6" style="height: 250px">
             <a href="[[mentor.website]]" target="_blank"><img ng-src="[[mentor.image]]" class="img-rounded" alt="[[mentor.firstname]] [[mentor.lastname]]"></a>
@@ -96,8 +96,4 @@ myApp.controller("appController", ["$scope", function($scope) {
     </ul>
 </div> <!-- /container -->
 
-
-<div ng-app="myApp" ng-controller="appController">
-    My favourite super hero is: [[ myName ]]
-</div>
 

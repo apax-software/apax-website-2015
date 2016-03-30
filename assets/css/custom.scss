@@ -365,6 +365,12 @@ $mobile-width: $tablet-width - 1;
 				text-transform: uppercase;
 				font-weight: 600;
 			}
+			a {
+				color: $color_cardinal_approx;
+				&:hover {
+					color: $color_gray;
+				}
+			}
 		}
 		h4 {
 			color: #bbb;
@@ -377,6 +383,9 @@ $mobile-width: $tablet-width - 1;
 			i {
 				font-size: 0.75em;
 			}
+		}
+		.all-button {
+			display: none;
 		}
 	}
 	#team {

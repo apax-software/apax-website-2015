@@ -11,8 +11,9 @@ $(document).ready(function() {
 		$scope.myName = "Kyle";
 	}]);
 
-	$("a.more-button").click(function() {
+	$("a.more-button").click(function(event) {
 		$(this).css('display', 'none');
+		$('a.all-button').show(500);
 	});
 	// center images for text
 	// if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) { // Check if mobile
