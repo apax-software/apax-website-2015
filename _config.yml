@@ -7,3 +7,4 @@ sass:
 gems:
   - jekyll-sitemap
   - jekyll-redirect-from
+  - jekyll-angular

@@ -1,5 +1,16 @@
 $(document).ready(function() {
 
+	var myApp = angular.module("mentors", []);
+
+	myApp.config(function($interpolateProvider) {
+	$interpolateProvider.startSymbol('[[');
+	$interpolateProvider.endSymbol(']]');
+	});
+
+	myApp.controller("MentorsCtrl", ["$scope", function($scope) {
+		$scope.myName = "Kyle";
+	}]);
+
 	$("a.more-button").click(function() {
 		$(this).css('display', 'none');
 	});

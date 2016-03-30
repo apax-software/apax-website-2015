@@ -668,6 +668,30 @@ $mobile-width: $tablet-width - 1;
     column-count: 2;
 }
 
+.Mentors {
+	
+	.thumbnails {
+		img {
+			width: 120px;
+		}
+		padding-left: 0;
+		li {
+			list-style-type: none;
+		}
+		.caption {
+			h3 {
+				font-size: 19px;
+				margin: 0;
+			}
+			p {
+				font-size: 14px;
+				line-height: 16px;
+				margin-top: 5px;
+			}
+		}
+	}
+}
+
 //@extend-elements
 //original selectors
 //html, body
