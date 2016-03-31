@@ -682,7 +682,8 @@ $mobile-width: $tablet-width - 1;
 	
 	.thumbnails {
 		img {
-			width: 120px;
+			width: 80%;
+			margin-left: 10%;
 		}
 		padding-left: 0;
 		li {
@@ -692,11 +693,13 @@ $mobile-width: $tablet-width - 1;
 			h3 {
 				font-size: 19px;
 				margin: 0;
+				margin-left: 10%;
 			}
 			p {
 				font-size: 14px;
 				line-height: 16px;
 				margin-top: 5px;
+				margin-left: 10%;
 			}
 		}
 	}
