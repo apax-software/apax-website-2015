@@ -11,17 +11,19 @@ title: Mentors
 
 </div>
 <script>
+
 var myApp = angular.module("myApp", []);
 
 myApp.config(function($interpolateProvider) {
-$interpolateProvider.startSymbol('[[');
-$interpolateProvider.endSymbol(']]');
+    $interpolateProvider.startSymbol('[[');
+    $interpolateProvider.endSymbol(']]');
 });
 
 myApp.controller("appController", ["$scope", function($scope) {
-  $scope.myName = "Kyle";
 
-  $scope.mentors = [
+    $scope.dataLoaded = false;
+
+    $scope.mentors = [
     {"title":"Founder","website":"http://www.linkedin.com/pub/drew-curtis/18/285/32b","firstname":"Drew", "lastname":" Curtis","company":"Fark.com","website_text":"Founder, Fark.com","image":"/assets/img/mentors/curtis.jpg.pagespeed.ic.VTQQMUw6pQ.jpg"},
     {"title":"CEO","website":"http://www.linkedin.com/in/nager","firstname":"Marc", "lastname":" Nager","company":"Startup Weekend","website_text":"CEO, StartupWeekend","image":"/assets/img/mentors/nager.jpg"},
     {"title":"Founder","website":"http://www.linkedin.com/in/nihalmehta","firstname":"Nihal", "lastname":" Mehta","company":"LocalResponse. Partner, ENIAC Ventures","website_text":"CEO, LocalResponse | Partner, ENIAC Ventures","image":"/assets/img/mentors/mehta.jpg.pagespeed.ic.5rqx5N3oxH.jpg"},
@@ -76,6 +78,8 @@ myApp.controller("appController", ["$scope", function($scope) {
     {"title":"CEO","website":"http://www.linkedin.com/in/brianpoe","firstname":"Brian", "lastname":" Poe","company":"Corrisoft","website_text":"CEO, Corrisoft","image":"/assets/img/mentors/brian_poe.jpg"},
     {"title":"CEO","website":"https://www.linkedin.com/pub/stephen-gray/0/a9/242/en","firstname":"Stephen", "lastname":" Gray","company":"Gray Construction","website_text":"CEO, Gray Construction","image":"/assets/img/mentors/stephen_gray.jpg"}
     ];  
+
+    $scope.dataLoaded = true;
 }]);
 
 
@@ -84,9 +88,13 @@ myApp.controller("appController", ["$scope", function($scope) {
 <!-- <script src="/assets/js/angular.min.js" type="text/javascript" defer="defer"></script>  -->
 
 
-<div ng-app="myApp" class="container" ng-controller="appController">
+<div ng-app="myApp" class="container se-pre-icon" ng-controller="appController">
     <ul class="thumbnails row">        
-        <li ng-repeat="mentor in mentors|orderBy:'lastname'" class="col-md-2 col-sm-3 col-xs-6" style="height: 250px">
+
+        <i ng-hide="dataLoaded" class="fa fa-spinner">Loading</i>
+
+        <li ng-show="dataLoaded" ng-repeat="mentor in mentors|orderBy:'lastname'" class="col-md-2 col-sm-3 col-xs-6" style="height: 250px">      
+            
             <a href="[[mentor.website]]" target="_blank"><img ng-src="[[mentor.image]]" class="img-rounded" alt="[[mentor.firstname]] [[mentor.lastname]]"></a>
             <div class="caption">
                 <h3><a href="[[mentor.website]]" target="_blank">[[mentor.firstname]] [[mentor.lastname]]</a></h3>

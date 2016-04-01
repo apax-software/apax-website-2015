@@ -50,6 +50,23 @@ $mobile-width: $tablet-width - 1;
 	
 }
 
+span.anchor {
+	display: block;
+	height: 50px; /*same height as header*/
+	margin-top: -50px; /*same height as header*/
+	visibility: hidden;
+	@include mobile {
+		height: 10px;
+		margin-top: 0;
+	}
+}
+
+#mobile-none {
+	@include mobile {
+		display: none
+	}
+}
+
 /*custom class for offset on small device*/
 @include mobile {
 	.col-xs-offset-1 {
@@ -81,10 +98,12 @@ $mobile-width: $tablet-width - 1;
     }
 
     h1, h2 {
+    	margin-top: 70px;
+    	font-size: 55px;
     	padding-left: 100px;
     	@include mobile {
     		padding-left: 0;
-    		font-size: 1em;
+    		font-size: 1.5em;
     	}
     }
 }
@@ -120,7 +139,7 @@ $mobile-width: $tablet-width - 1;
 		}
 	}
 	@include mobile {
-		height: 140px;
+		height: 180px;
 	}
 	
 }
@@ -192,6 +211,9 @@ $mobile-width: $tablet-width - 1;
 				vertical-align: middle;
 				height: 100%;
 			}
+			@include mobile {
+				height: 125px;
+			}
 			img {
 				vertical-align: middle;
 				display: inline-block;
@@ -258,12 +280,22 @@ $mobile-width: $tablet-width - 1;
 }
 
 .About {
+	iframe {
+		width: 100%;
+		height: 430;
+		@include mobile {
+			height: 200px;
+		}
+	}
 	p {
 		margin-top: 40px;
 		font-size: 1.2em;
 		font-weight: 300;
 		color: $black;
 		line-height: 1.4em;
+	}
+	h2 {
+		margin-top: 25px;
 	}
 	h3 {
 		color: #BF001E;
@@ -272,6 +304,10 @@ $mobile-width: $tablet-width - 1;
 	li {
 		font-size: 20px;
 		line-height: 33px;
+		@include mobile {
+			font-size: 14px;
+			line-height: 18px;
+		}
 	}
 	.across {
 		border: 1px solid #ECECEC;
@@ -289,11 +325,13 @@ $mobile-width: $tablet-width - 1;
 				background-image: url("../img/quotes-bg.png");
 				background-position-x: 70%;
 				background-position-y: 36%;
-				background-size: 125%;
+				background-size: 105%;
 				p {
-					padding-top: 10%;
-					padding-left: 20%;
-					padding-right: 20%;
+					padding-top: 20%;
+					padding-left: 10%;
+					padding-right: 10%;
+					font-size: 18px;
+					line-height: 22px;
 				}
 			}
 			@include tablet {
@@ -381,6 +419,9 @@ $mobile-width: $tablet-width - 1;
 			&:hover {
 				text-decoration: underline;
 			}
+			@include mobile {
+				font-size: 22px;
+			}
 			i {
 				font-size: 0.75em;
 			}
@@ -421,12 +462,21 @@ $mobile-width: $tablet-width - 1;
 		img {
 			width: 100%;
 			border-radius: 50%;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			@include mobile {
+				border-radius: 0;
+			}
 		}
 		h3 {
 			color: $color_cardinal_approx;
 			font-size: 1.2em;
 			font-weight: 200;
 			margin-bottom: 0;
+			@include mobile {
+				font-size: 1em;
+				margin-left: 0;
+			}
 		}
 		h4 {
 			color: $color_cardinal_approx;
@@ -434,6 +484,7 @@ $mobile-width: $tablet-width - 1;
 			font-weight: 600;
 			margin-top: 4px;;
 			text-transform: uppercase;
+			font-size: 0.6em;
 		}
 		p {
 			font-size: 0.7em;
@@ -474,6 +525,20 @@ $mobile-width: $tablet-width - 1;
 	}
 }
 
+.Apply {
+	.apply-frame iframe {
+		@include mobile {
+			display: none;
+		}
+	}
+	.apply-frame p {
+		display: none;
+		@include mobile {
+			display: block;
+		}
+	}
+}
+
 .Perks {
 	color: black;
 	@include desktop {
@@ -509,7 +574,11 @@ $mobile-width: $tablet-width - 1;
 		margin-top: 30px;
 		line-height: 18px;
 		text-align: left;
+		@include mobile {
+			margin-bottom: 15px;
+		}
 	}
+
 	.col-lg-6 {
 		margin-bottom: 50px;
 	}
@@ -524,6 +593,9 @@ $mobile-width: $tablet-width - 1;
 			background: none;
 			border-right: 2px solid $color_light_gray;
 			&:last-child {
+				border-right: none;
+			}
+			@include mobile {
 				border-right: none;
 			}
 		}
@@ -548,6 +620,9 @@ $mobile-width: $tablet-width - 1;
 			&:last-child {
 				border-right: none;
 			}
+			@include mobile {
+				border-right: none;
+			}
 		}
 		p {
 			 min-height: 50px;
@@ -565,9 +640,15 @@ $mobile-width: $tablet-width - 1;
 		&:last-child {
 			border-right: none;
 		}
+		@include mobile {
+			border-right: none;
+		}
 		p {
 			min-height: 50px;
 			margin-bottom: 0;
+		}
+		@include mobile {
+			margin-bottom: 20px;
 		}
 		p:last-child {
 			min-height: 0;
@@ -578,6 +659,7 @@ $mobile-width: $tablet-width - 1;
 	b {
 		font-weight: 600;
 		text-transform: uppercase;
+
 	}
 
 	a {
@@ -764,6 +846,11 @@ body {
 	.col-md-8 {
 		border-left: solid 2px $color_pumice_approx;
 		padding-top: 10px;
+		@include mobile {
+			border-left: 1px solid #dddddd;
+			margin-top: 0;
+			padding-top: 0;
+		}
 	}
 	a:hover {
 		color: #dedede;
@@ -776,6 +863,9 @@ body {
 		&:hover {
 			color: $color_cardinal_approx;
 		}
+		@include mobile {
+			font-size: 14px;
+		}
 	}
 	table tbody {
 		
@@ -784,6 +874,10 @@ body {
 			margin-left: 17.5%;
 			filter: grayscale(100%);
 			-webkit-filter: grayscale(100%);
+			@include mobile {
+				width: 90%;
+				margin-left: 5%;
+			}
 		}
 		.large-image {
 			width: 55%;
@@ -829,7 +923,7 @@ body {
 		font-size: 26px;
 		margin-top: 25px;
 		@include mobile {
-			font-size: 0.5em;
+			font-size: 1em;
 		}
 	}
 	.row {
@@ -840,6 +934,10 @@ body {
 		margin-bottom: 10px;
 		&:last-child {
 			margin-bottom: 40px;
+		}
+		@include mobile {
+			margin-top: 4px;
+			margin-bottom: 0;
 		}
 	}
 	a {
@@ -973,6 +1071,17 @@ body {
 		color: black;
 		&:hover {
 			color: $color_cardinal_approx;
+		}
+		@include mobile {
+			font-size: 100px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+	}
+	@include mobile {
+		p {
+			font-size: 12px;
+			line-height: 14px;
 		}
 	}
 }
