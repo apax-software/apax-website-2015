@@ -95,23 +95,20 @@ span.anchor {
 
     @include mobile {
     	height: 300px;
-    	background-position: center;
     }
 
     h1, h2 {
-    	padding-top: 50%;
+    	padding-top: 60%;
 		width: 80%;
 		color: white;
-    	font-size: 55px;
-    	padding-left: 20%;
+    	font-size: 45px;
     	@include tablet {
-    		padding-top: 40%;
-    		padding-left: 25%;
+    		/*padding-top: 40%;
+    		padding-left: 25%;*/
     		font-size: 2.5em;
     	}
     	@include mobile {
-    		padding-top: 60%;
-    		padding-left: 10%;
+    		padding-top: 90%;
     		font-size: 1.5em;
     	}
     }
@@ -190,7 +187,7 @@ span.anchor {
 }
 
 .gradient {
-	background: #cecece; /* Old browsers */
+	background: #cecece; /* Old browsers 
 	background: -moz-linear-gradient(-45deg, #cecece 0%, #ffffff 49%, #ffffff 51%, #cecece 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(-45deg, #cecece 0%,#ffffff 49%,#ffffff 51%,#cecece 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(135deg, #cecece 0%,#ffffff 49%,#ffffff 51%,#cecece 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
