@@ -205,7 +205,10 @@ span.anchor {
 		color: white;
 	}
 	.company {
-
+		min-height: 400px;
+		@include mobile {
+			min-height: 300px;
+		}
 		.img-container {
 			border: 1px solid #CCC;
 			height: 175px;
@@ -257,6 +260,34 @@ span.anchor {
 			font-size: 0.75em;
 			line-height: 1.1em;
 		}
+	}
+	#DonorCentric, #Zimmzang, #YouSawMe {
+		width: 35%;
+		margin-left: 32.5%;
+	}
+	#HippoSoftware {
+		width: 50%;
+		margin-left: 25%;
+	}
+	#VegyVida {
+		width: 45%;
+		margin-left: 27.5%;
+	}
+	#CCR {
+		width: 25%;
+		margin-left: 38.5%;
+	}
+	#PawnMetrics {
+		width: 60%;
+		margin-left: 15%;
+	}
+	#Blinkscan {
+		width: 70%;
+		margin-left: 15%;
+	}
+	#CMADHD {
+		width: 40%;
+		margin-left: 30%;
 	}
 }
 .Contact, #contact {

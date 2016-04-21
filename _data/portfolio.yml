@@ -1,0 +1,81 @@
+# Note: convention is that 
+# upcoming classes are moved to top of list, in chronological order. 
+# Inactive classes should be moved to end of list.
+
+- name: Fanbloom
+  description: Fanbloom combines workflow automation tools -- including messaging and payment features -- with detailed social media audience intelligence, allowing brands and marketers to confidently identify and collaborate with influencers.
+  image_url: fanbloom
+  site_url: http://fanbloom.com/
+
+- name: Schedule It
+  description: Schedule It provides automated and on-demand scheduling assistance to independent insurance adjusters around North America. A blend of technology and human empathy helps our customers assist homeowners to more quickly recover from documented property damage.
+  image_url: ScheduleIt
+  site_url: https://scheduleit.io/
+
+- name: Mobile Serve
+  description: MobileServe’s web and mobile based platform helps organizations and communities build positive cultures and strong relationships by making it easy to share stories of social good, manage volunteer initiatives, and demonstrate social impact.
+  image_url: MobileServe
+  site_url: http://www.mobileserve.org/
+
+- name: Creative Wagering Technologies
+  description: CWT creates fun and simple methods for a new generation of betting enthusiasts to place pari-mutuel wagers on live sporting events. Our wagering games provide an online casino experience more familiar with other industries along with a social environment that is more unique than anything that currently exists for pari-mutuel wagering. Our core product Slots of Races is the first site that allows users to place wagers on multiple horse and dog races in real time.
+  image_url: CWT
+  site_url: '#'
+
+- name: DonorCentric
+  description: DonorCentric is building a modern communications and data platform for nonprofits to replace current Constituent Relationship Management (CRM) systems. This platform helps nonprofits retain existing and engage new donors. DonorCentric's first offering is a donation service that allows nonprofits to quickly start accepting donations online. The service includes automatic receipting and gift entry which reduces errors and saves time for nonprofits.
+  image_url: DonorCentric
+  site_url: '#'
+
+- name: Travel Notes
+  description: Travel Notes automatically notifies financial institutions of their cardholders' travel plans when they purchase airline tickets, so their card is not declined when traveling outside of their normal geographic area. While doing this, Travel Notes automatically helps cardholders secure compensation ($450+) from airlines that travelers are entitled to when their flight is delayed, canceled, or overbooked.
+  image_url: TravelNotes
+  site_url: http://www.travelnotenow.com/
+
+- name: Zimmzang
+  description: Zimmzang is an ecommerce platform that digitizes & automates the process of selling apparel to schools, large groups & teams from concept to delivery. Zimmzang works with organizations to provide custom apparel to their members, students, or players while saving volunteer hours, increasing fundraising, and eliminating old-fashion order forms.
+  image_url: Zimmzang
+  site_url: http://store.zimmzang.com/
+
+- name: Hippo Manager
+  description: Hippo Manager is an easy to use, customizable cloud-based veterinary practice software that helps veterinarians and vet professionals manage their practices by making software a seamless part of their business. Our solution covers all aspects of operating a practice including appointment scheduling, medical records, inventory management and billing.
+  image_url: HippoSoftware
+  site_url: http://hippomanager.com/
+
+- name: Healthy Nation
+  description: Healthy Nation creates and sells food products that make healthy eating both fun and enjoyable. The foundation of Healthy Nation is trust, transparency, and quality. Consumers can be confident that every product Healthy Nation produces will help make the world a healthier place. Healthy Nation's first product Vegy Vida finally resolves the issue of getting children and adults to eat vegetables.
+  image_url: VegyVida
+  site_url: http://vegyvida.com/
+
+- name: You Saw Me
+  description: You Saw Me invented the Verve, a patented machine-washable retroreﬂective vest embedded with custom-color LEDs for runners, bicyclists, and ANYONE wanting to be noticed. We've created a fun, functional way to save the lives of pedestrians on the road. Visibility safety meets cool; customizability meets versatility; brighter is better; you saw me.
+  image_url: YouSawMe
+  site_url: http://www.yousawme.com/
+
+- name: Sword
+  description: Sword is a performance hydration drink. It’s simple formula is designed to improve your performance by delaying the onset of fatigue. Created by two doctors who specialize in athletics, Sword more effectively hydrates, contains no artificial ingredients or colors, and optimally fuels your body so you can exercise stronger, longer.
+  image_url: Sword
+  site_url: http://drinksword.com/
+
+- name: Custom College Recruiting
+  description: Custom College Recruiting (CCR) reaches out to 6,000,000 worldwide high school basketball players to get exposure to over 6,000 college coaches. At the same time, it helps the college coaches to find the right talent among this vast amount of basketball players. This is achieved by CCR's unique method for evaluating high school basketball players.
+  image_url: CCR
+  site_url: https://www.customcollegerecruiting.com/
+
+- name: Pawn Metrics
+  description: Pawn Metrics is a cloud based software that helps pawn shop owners manage their business. We keep track of customers, transactions, inventory, and finances, and work with point-of-sale hardware for an all-in-one, web-based solution.
+  image_url: PawnMetrics
+  site_url: '#'
+
+- name: Blink Technologies
+  description: Blink Technologies is changing the way you capture, work with and display images. We are an imaging company with a desire to use breakthrough innovations to allow you to seamlessly move between your physical and digital worlds. In a Blink.
+  image_url: Blinkscan
+  site_url: http://www.blinkscan.com/
+
+- name: Control My ADHD
+  description: Using short entertaining video modules, you are taught specifically how to deal with common ADHD problem areas. We provide a host of tools and exercises to help you control your ADHD -- everything from apps to mental tricks to brainwave entertainment! Say goodbye to the stress, distractions, and frustrations of having ADHD, and hello to a peaceful and focused mind.
+  image_url: CMADHD
+  site_url: '#'
+
+
+# Note: Inactive Courses below here
