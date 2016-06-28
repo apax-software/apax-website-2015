@@ -3,6 +3,11 @@
   image_url: ralphvr
   site_url: http://ralphvr.com/
 
+- name: Virtual Peaker
+  description: Virtual Peaker is a software platform that manages residential electric demand. It applies machine learning and real-time control to internet-enabled appliances to reduce demand while minimizing negative impact to the residential customer. The platform is accessed through a web browser, and has tailored portals for utility and residential users.
+  image_url: virtual_peaker
+  site_url: http://www.virtualpeaker.io/
+
 - name: Switcher Studio
   description: Switcher is a video creation platform. The service includes access to the Switcher iOS video mixing app, cloud services, desktop tools and support. Sync up to 4 iPhones and iPads to record and stream LIVE video with TV quality results and share instantly on YouTube, Facebook and more.
   image_url: switcher_studio
