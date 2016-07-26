@@ -31,12 +31,12 @@
 - name: Creative Wagering Technologies
   description: CWT creates fun and simple methods for a new generation of betting enthusiasts to place pari-mutuel wagers on live sporting events. Our wagering games provide an online casino experience more familiar with other industries along with a social environment that is more unique than anything that currently exists for pari-mutuel wagering. Our core product Slots of Races is the first site that allows users to place wagers on multiple horse and dog races in real time.
   image_url: CWT
-  site_url: '#'
+  site_url: https://www.creativewagering.com/
 
 - name: DonorCentric
   description: DonorCentric is building a modern communications and data platform for nonprofits to replace current Constituent Relationship Management (CRM) systems. This platform helps nonprofits retain existing and engage new donors. DonorCentric's first offering is a donation service that allows nonprofits to quickly start accepting donations online. The service includes automatic receipting and gift entry which reduces errors and saves time for nonprofits.
   image_url: DonorCentric
-  site_url: '#'
+  site_url: http://blog.donorcentric.co/
 
 - name: Travel Notes
   description: Travel Notes automatically notifies financial institutions of their cardholders' travel plans when they purchase airline tickets, so their card is not declined when traveling outside of their normal geographic area. While doing this, Travel Notes automatically helps cardholders secure compensation ($450+) from airlines that travelers are entitled to when their flight is delayed, canceled, or overbooked.
