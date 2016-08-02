@@ -1,5 +1,5 @@
 name: Awesome Fellowship
-permalink: pretty
+permalink: /media/:year/:month/:day/:title/
 relative_permalinks: false
 sass:
   sass_dir: _scss
