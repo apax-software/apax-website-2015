@@ -20,13 +20,25 @@ redirect_from:
         <div class="col-sm-8 col-sm-offset-2 blog-main">
           {% for post in site.posts %}
           <div class="blog-post">
-              <h2><a href={{post.url}}>{{ post.title }}</a></h2>
+              <h2>
+                {% if post.external %}
+                  <a href="{{ post.ext-link }}">
+                {% else %}
+                  <a href="{{ post.url }}">
+                {% endif %}
+                {{ post.title }}
+                </a>
+              </h2>
                 <p class="blog-post-meta"><a href="mailto:{{post.email}}">{{ post.author }}</a><br>
                 {{ post.date | date: "%b %d, %Y" }}
                 </p>
                 <p>{{ post.content | split:'<!--break-->' | first }}
                   {% if post.content contains '<!--break-->' %}
-                      <a href="{{ post.url }}">Read more...</a>
+                      {% if post.external %}
+                        <a href="{{ post.ext-link }}">View post</a>
+                      {% else %}
+                        <a href="{{ post.url }}">Read more...</a>
+                      {% endif %}
                   {% endif %}</p>
           </div>
           {% endfor %}
