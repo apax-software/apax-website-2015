@@ -18,7 +18,7 @@ redirect_from:
 		{% for company in site.data.portfolio %}
 		<div class="col-md-6 col-sm-6  col-xs-12 company">
 			<div class="img-container shadow gradient ">
-				<a href="{{company.site_url}}" target="_blank"><img class="center" id="{{company.image_url}}" src="/assets/img/portfolio/{{company.image_url}}.png" alt="{{company.name}}" /></a>
+				<a href="{{company.site_url}}" target="_blank"><img class="center" id="{{company.image_url}}" src="/assets/img/portfolio/{{company.image_url}}.png" alt="{{company.name}}" {% if company.width %} style="width:{{company.width}}%; margin-left:{{company.margin}}%" {% endif %} /></a>
 			</div>
 			<h3><a href="{{company.site_url}}">{{company.name}}</a></h3> 
 			<p>{{company.description}}</p>
