@@ -892,6 +892,7 @@ body {
 	.col-md-8 {
 		border-left: solid 2px $color_pumice_approx;
 		padding-top: 10px;
+		margin-bottom: 20px;
 		@include mobile {
 			border-left: 1px solid #dddddd;
 			margin-top: 0;
