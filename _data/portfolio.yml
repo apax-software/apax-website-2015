@@ -1,7 +1,21 @@
 - name: Cloverleaf.me
-  description: Cloverleaf is proficiency, preferences and personality test service to help employees discover their unique identity and reveal how they fit within teams.
+  description: Cloverleaf is a proficiency, preferences and personality test service to help employees discover their unique identity and reveal how they fit within teams.
   image_url: cloverleaf
   site_url: https://www.cloverleaf.me/go/
+  width: 90
+  margin: 5
+
+- name: Inscope Medical Solution
+  description: Inscope Medical Solution is a medical device company focused on developing low-cost, disposable, connected medical devices.
+  image_url: inscope
+  site_url: http://inscopemedical.com/
+  width: 90
+  margin: 5
+
+- name: Credit Fair-E
+  description: Credit Fair-E is a licensed lender that provides fair, affordable and flexible small-dollar consumer loans designed so the borrower can repay.
+  image_url: credit_fair-e
+  site_url: http://www.creditfaire.com/
   width: 90
   margin: 5
 
